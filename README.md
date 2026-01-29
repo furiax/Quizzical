@@ -1,16 +1,18 @@
-# React + Vite
+# Quiz App React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##About
+This project is a solo project from Scrimba.
+After taking the React Fundamental course there, this quiz app is an assignment to practice our newly learned React skills.
 
-Currently, two official plugins are available:
+##Requirments:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Two Screens (start and questions)
+- Fetch questions from OTDB API
+- Tally correct answers after "Checked answers" button is clicked
+- Style and polish app to match the given figma design
 
-## React Compiler
+##Things I learned during this project:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Deal with HTML entities, had to use the 'he' package to decode the questions and answers
+- Style radio buttons so they don't look like a radio anymore
+- Track the selected answer index inside each question object

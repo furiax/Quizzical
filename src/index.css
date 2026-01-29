@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #F5F7FB;
+  color: #293264;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+body::before{
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 0;
+  right: -5px;
+  background: url("../images/blobs.png");
+  background-size: contain;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    width: 297px;
+    height: 235px;
+    bottom: -20px;
+    left: -20px;
+    background: url("../images/blob5.png");
+    background-size: contain;
+    z-index: 0;
+}
+
+.home-screen{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Karla', sans-serif;
+}
+
+.home-screen > h1{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.home-screen > button{
+  background-color: #4D5B9E;
+  color: #F5F7FB;
+  font-weight: 500;
+  border: none;
+  border-radius: 15px;
+  padding: 16px 28px;
+  cursor: pointer;
+}
+
+.question-section{
+  margin-bottom: 14px;
+}
+
+.question-section > h2{
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  margin-top: 5px;
+}
+
+.question-section > hr{
+  border: none;
+  width: 100%;
+  height: 0.8px;
+  background-color: #DBDEF0;
+  position: relative;
+  z-index: 1;
+}
+
+.possible-answer{
+  border: 1px solid #4D5B9E;
+  border-radius: 8px;
+  font-size: 0.65rem;
+  font-weight: 500;
+  padding: 4px 8px;
+  text-align: center;
+  z-index: 1;
+  display: block;
+}
+.possible-answer > input{
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.selected-answer{
+  background-color: #D6DBF5;
+  border: none;
+}
+
+.correct-answer{
+  background-color: #94D7A2;
+  border: none;
+}
+
+.wrong-answer{
+  background-color: #F8BCBC;
+  border: none;
+  opacity: 50%;
+}
+
+.fade-answer{
+  opacity: 50%;
+}
+
+.answers{
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.bottom-section button{
+  z-index: 2;
+  background-color: #4D5B9E;
+  color: #F5F7FB;
+  padding: 11px 22px;
+  font-weight: 600;
+  font-size: 0.65rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.bottom-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.bottom-section p{
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
